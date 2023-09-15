@@ -19,15 +19,15 @@
 'define anomtsm = sst - tsmclim.2(t=1)'
 
 * definir atributos e nome do arquivo de saida
-'set sdfwrite -4d -rt -flt -nc4 /home/danilo/Documentos/R/nino/anomalia_TSM_1983.nc'
+'set sdfwrite -4d -rt -flt -nc4 /home/danilo/Documentos/R/nino/anomalia_mensal_TSM_1983.nc'
 
-'set sdfattr tsmclim String climatologia 1966-1995'
+'set sdfattr anomtsm String climatologia 1966-1995'
 
 ***************************************************************************************
 * preencher atributos extras do arquivo conforme necessário 
-'set sdfattr tsmclim String name AnomTSM'
-'set sdfattr tsmclim String long_name Anomalia da Temperatura da Superficie do Mar'
-'set sdfattr tsmclim String unit K'
+'set sdfattr anomtsm String name AnomTSM'
+'set sdfattr anomtsm String long_name Anomalia da Temperatura da Superficie do Mar'
+'set sdfattr anomtsm String unit K'
 * escrever arquivo
 'sdfwrite anomtsm'
 
